@@ -44,7 +44,7 @@
             this.l_turn = new System.Windows.Forms.Label();
             this.l_Players = new System.Windows.Forms.Label();
             this.l_Winner = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.l_playerwhowon = new System.Windows.Forms.Label();
             this.b_restart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb12)).BeginInit();
@@ -77,7 +77,7 @@
             this.pb22.Image = global::TicTacToe.Properties.Resources.question_mark_96;
             this.pb22.Location = new System.Drawing.Point(557, 303);
             this.pb22.Name = "pb22";
-            this.pb22.Size = new System.Drawing.Size(132, 97);
+            this.pb22.Size = new System.Drawing.Size(125, 94);
             this.pb22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb22.TabIndex = 0;
             this.pb22.TabStop = false;
@@ -88,9 +88,9 @@
             // 
             this.pb12.BackColor = System.Drawing.Color.Transparent;
             this.pb12.Image = global::TicTacToe.Properties.Resources.question_mark_96;
-            this.pb12.Location = new System.Drawing.Point(557, 190);
+            this.pb12.Location = new System.Drawing.Point(557, 187);
             this.pb12.Name = "pb12";
-            this.pb12.Size = new System.Drawing.Size(132, 97);
+            this.pb12.Size = new System.Drawing.Size(125, 94);
             this.pb12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb12.TabIndex = 0;
             this.pb12.TabStop = false;
@@ -103,7 +103,7 @@
             this.pb02.Image = global::TicTacToe.Properties.Resources.question_mark_96;
             this.pb02.Location = new System.Drawing.Point(557, 77);
             this.pb02.Name = "pb02";
-            this.pb02.Size = new System.Drawing.Size(132, 97);
+            this.pb02.Size = new System.Drawing.Size(125, 94);
             this.pb02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb02.TabIndex = 0;
             this.pb02.TabStop = false;
@@ -114,9 +114,9 @@
             // 
             this.pb21.BackColor = System.Drawing.Color.Transparent;
             this.pb21.Image = global::TicTacToe.Properties.Resources.question_mark_96;
-            this.pb21.Location = new System.Drawing.Point(410, 303);
+            this.pb21.Location = new System.Drawing.Point(414, 303);
             this.pb21.Name = "pb21";
-            this.pb21.Size = new System.Drawing.Size(132, 97);
+            this.pb21.Size = new System.Drawing.Size(125, 94);
             this.pb21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb21.TabIndex = 0;
             this.pb21.TabStop = false;
@@ -127,9 +127,9 @@
             // 
             this.pb11.BackColor = System.Drawing.Color.Transparent;
             this.pb11.Image = global::TicTacToe.Properties.Resources.question_mark_96;
-            this.pb11.Location = new System.Drawing.Point(410, 190);
+            this.pb11.Location = new System.Drawing.Point(414, 187);
             this.pb11.Name = "pb11";
-            this.pb11.Size = new System.Drawing.Size(132, 97);
+            this.pb11.Size = new System.Drawing.Size(125, 94);
             this.pb11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb11.TabIndex = 0;
             this.pb11.TabStop = false;
@@ -140,9 +140,9 @@
             // 
             this.pb01.BackColor = System.Drawing.Color.Transparent;
             this.pb01.Image = global::TicTacToe.Properties.Resources.question_mark_96;
-            this.pb01.Location = new System.Drawing.Point(410, 77);
+            this.pb01.Location = new System.Drawing.Point(414, 77);
             this.pb01.Name = "pb01";
-            this.pb01.Size = new System.Drawing.Size(132, 97);
+            this.pb01.Size = new System.Drawing.Size(125, 94);
             this.pb01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb01.TabIndex = 0;
             this.pb01.TabStop = false;
@@ -154,9 +154,9 @@
             this.pb20.BackColor = System.Drawing.Color.Transparent;
             this.pb20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pb20.Image = global::TicTacToe.Properties.Resources.question_mark_96;
-            this.pb20.Location = new System.Drawing.Point(263, 303);
+            this.pb20.Location = new System.Drawing.Point(267, 303);
             this.pb20.Name = "pb20";
-            this.pb20.Size = new System.Drawing.Size(132, 97);
+            this.pb20.Size = new System.Drawing.Size(125, 94);
             this.pb20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb20.TabIndex = 0;
             this.pb20.TabStop = false;
@@ -168,9 +168,9 @@
             this.pb10.BackColor = System.Drawing.Color.Transparent;
             this.pb10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pb10.Image = global::TicTacToe.Properties.Resources.question_mark_96;
-            this.pb10.Location = new System.Drawing.Point(263, 190);
+            this.pb10.Location = new System.Drawing.Point(267, 187);
             this.pb10.Name = "pb10";
-            this.pb10.Size = new System.Drawing.Size(132, 97);
+            this.pb10.Size = new System.Drawing.Size(125, 94);
             this.pb10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb10.TabIndex = 0;
             this.pb10.TabStop = false;
@@ -181,9 +181,9 @@
             // 
             this.pb00.BackColor = System.Drawing.Color.Transparent;
             this.pb00.Image = global::TicTacToe.Properties.Resources.question_mark_96;
-            this.pb00.Location = new System.Drawing.Point(263, 77);
+            this.pb00.Location = new System.Drawing.Point(267, 77);
             this.pb00.Name = "pb00";
-            this.pb00.Size = new System.Drawing.Size(132, 97);
+            this.pb00.Size = new System.Drawing.Size(125, 94);
             this.pb00.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb00.TabIndex = 0;
             this.pb00.TabStop = false;
@@ -234,14 +234,15 @@
             // 
             // l_Players
             // 
-            this.l_Players.AutoSize = true;
+            this.l_Players.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.l_Players.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Players.ForeColor = System.Drawing.Color.White;
-            this.l_Players.Location = new System.Drawing.Point(50, 187);
+            this.l_Players.Location = new System.Drawing.Point(-1, 187);
             this.l_Players.Name = "l_Players";
-            this.l_Players.Size = new System.Drawing.Size(156, 43);
+            this.l_Players.Size = new System.Drawing.Size(258, 43);
             this.l_Players.TabIndex = 4;
             this.l_Players.Text = "Player1";
+            this.l_Players.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // l_Winner
             // 
@@ -254,16 +255,16 @@
             this.l_Winner.TabIndex = 3;
             this.l_Winner.Text = "           ";
             // 
-            // label3
+            // l_playerwhowon
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(56, 285);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 43);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "              ";
+            this.l_playerwhowon.AutoSize = true;
+            this.l_playerwhowon.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_playerwhowon.ForeColor = System.Drawing.Color.Lime;
+            this.l_playerwhowon.Location = new System.Drawing.Point(56, 285);
+            this.l_playerwhowon.Name = "l_playerwhowon";
+            this.l_playerwhowon.Size = new System.Drawing.Size(145, 43);
+            this.l_playerwhowon.TabIndex = 4;
+            this.l_playerwhowon.Text = "              ";
             // 
             // b_restart
             // 
@@ -276,6 +277,7 @@
             this.b_restart.TabIndex = 5;
             this.b_restart.Text = "Restart Game";
             this.b_restart.UseVisualStyleBackColor = true;
+            this.b_restart.Click += new System.EventHandler(this.b_restart_Click);
             // 
             // Form1
             // 
@@ -285,7 +287,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pb00);
             this.Controls.Add(this.b_restart);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.l_playerwhowon);
             this.Controls.Add(this.l_Players);
             this.Controls.Add(this.l_Winner);
             this.Controls.Add(this.lTurn);
@@ -336,7 +338,7 @@
         private System.Windows.Forms.Label l_turn;
         private System.Windows.Forms.Label l_Players;
         private System.Windows.Forms.Label l_Winner;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label l_playerwhowon;
         private System.Windows.Forms.Button b_restart;
     }
 }
