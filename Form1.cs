@@ -57,7 +57,7 @@ namespace TicTacToe
             if (picture.Tag != null && picture.Tag.ToString() == "X")
             {
                 l_playerwhowon.Text = "Player 1";
-                
+
             }
             else if (picture.Tag != null && picture.Tag.ToString() == "O")
             {
@@ -66,81 +66,77 @@ namespace TicTacToe
             l_Players.Text = "Game Over";
             l_Winner.Text = "Winner";
         }
+        bool IsEqual(PictureBox picture, PictureBox picture2, PictureBox picture3)
+        {
+            if (picture.Tag != "question")
+            {
+                return picture.Tag == picture2.Tag && picture2.Tag == picture3.Tag;
+            }
+            return false;
+        }
         void CheckWinner()
         {
-            
-                if (pb00.Tag == pb01.Tag && pb01.Tag == pb02.Tag && pb00.Tag!="question")
-                {
-                    ChangeBackColor(pb00, pb01, pb02);
-                    WinnerPlayer(pb00);
-                }
-                if (pb10.Tag == pb11.Tag && pb11.Tag == pb12.Tag && pb10.Tag!="question")
-                {
-                    ChangeBackColor(pb10, pb11, pb12);
-                    WinnerPlayer(pb10);
-                }
-                if (pb20.Tag == pb21.Tag && pb21.Tag == pb22.Tag && pb20.Tag!="question")
-                {
-                    ChangeBackColor(pb20, pb21, pb22);
-                    WinnerPlayer(pb20);
-                }
-                if (pb00.Tag == pb10.Tag && pb10.Tag == pb20.Tag && pb00.Tag!="question")
-                {
-                    ChangeBackColor(pb00, pb10, pb20);
-                    WinnerPlayer(pb00);
-                }
-                if (pb01.Tag == pb11.Tag && pb11.Tag == pb21.Tag && pb01.Tag != "question")
-                {
-                    ChangeBackColor(pb01, pb11, pb21);
-                    WinnerPlayer(pb01);
-                }
-                if (pb02.Tag == pb12.Tag && pb12.Tag == pb22.Tag && pb02.Tag != "question")
-                {
-                    ChangeBackColor(pb02, pb12, pb22);
-                    WinnerPlayer(pb02);
-                }
-                if (pb00.Tag == pb11.Tag && pb11.Tag == pb22.Tag && pb00.Tag != "question")
-                {
-                    ChangeBackColor(pb00, pb11, pb22);
-                    WinnerPlayer(pb00);
-                }
-                if (pb02.Tag == pb11.Tag && pb11.Tag == pb20.Tag && pb02.Tag != "question")
-                {
-                    ChangeBackColor(pb02, pb11, pb20);
-                    WinnerPlayer(pb02);
-                }
-            
+
+            if (IsEqual(pb00, pb01, pb02))
+            {
+                ChangeBackColor(pb00, pb01, pb02);
+                WinnerPlayer(pb00);
+            }
+            if (IsEqual(pb10, pb11, pb12))
+            {
+                ChangeBackColor(pb10, pb11, pb12);
+                WinnerPlayer(pb10);
+            }
+            if (IsEqual(pb20, pb21, pb22))
+            {
+                ChangeBackColor(pb20, pb21, pb22);
+                WinnerPlayer(pb20);
+            }
+            if (IsEqual(pb00, pb10, pb20))
+            {
+                ChangeBackColor(pb00, pb10, pb20);
+                WinnerPlayer(pb00);
+            }
+            if (IsEqual(pb01, pb11, pb21))
+            {
+                ChangeBackColor(pb01, pb11, pb21);
+                WinnerPlayer(pb01);
+            }
+            if (IsEqual(pb02, pb12, pb22))
+            {
+                ChangeBackColor(pb02, pb12, pb22);
+                WinnerPlayer(pb02);
+            }
+            if (IsEqual(pb00, pb11, pb22))
+            {
+                ChangeBackColor(pb00, pb11, pb22);
+                WinnerPlayer(pb00);
+            }
+            if (IsEqual(pb02, pb11, pb20))
+            {
+                ChangeBackColor(pb02, pb11, pb20);
+                WinnerPlayer(pb02);
+            }
+
 
         }
-        void ResetBouton()
+        void ResetOneBouton(PictureBox picture)
         {
-            pb00.Image = Properties.Resources.question_mark_96;
-            pb00.Tag = "question";
-            pb00.BackColor = Color.Transparent;
-            pb01.Image = Properties.Resources.question_mark_96;
-            pb01.Tag = "question";
-            pb01.BackColor = Color.Transparent;
-            pb02.Image = Properties.Resources.question_mark_96;
-            pb02.Tag = "question";
-            pb02.BackColor = Color.Transparent;
-            pb10.Image = Properties.Resources.question_mark_96;
-            pb10.Tag = "question";
-            pb10.BackColor = Color.Transparent;
-            pb11.Image = Properties.Resources.question_mark_96;
-            pb11.Tag = "question";
-            pb11.BackColor = Color.Transparent;
-            pb12.Image = Properties.Resources.question_mark_96;
-            pb12.Tag = "question";
-            pb12.BackColor = Color.Transparent;
-            pb20.Image = Properties.Resources.question_mark_96;
-            pb20.Tag = "question";
-            pb20.BackColor = Color.Transparent;
-            pb21.Image = Properties.Resources.question_mark_96;
-            pb21.Tag = "question";
-            pb21.BackColor = Color.Transparent;
-            pb22.Image = Properties.Resources.question_mark_96;
-            pb22.Tag = "question";
-            pb22.BackColor = Color.Transparent;
+            picture.Image = Properties.Resources.question_mark_96;
+            picture.Tag = "question";
+            picture.BackColor = Color.Transparent;
+        }
+        void ResetAllBoutons()
+        {
+            ResetOneBouton(pb00);
+            ResetOneBouton(pb01);
+            ResetOneBouton(pb02);
+            ResetOneBouton(pb10);
+            ResetOneBouton(pb11);
+            ResetOneBouton(pb12);
+            ResetOneBouton(pb20);
+            ResetOneBouton(pb21);
+            ResetOneBouton(pb22);
             l_Players.Text = "Player1";
             l_Winner.Text = " ";
             l_playerwhowon.Text = " ";
@@ -161,63 +157,15 @@ namespace TicTacToe
             e.Graphics.DrawLine(pen, 550, 70, 550, 400);
         }
 
-        private void pb00_Click(object sender, EventArgs e)
+        private void pb_Click(object sender, EventArgs e)
         {
-            Game(pb00);
-            CheckWinner();
-        }
-
-        private void pb01_Click(object sender, EventArgs e)
-        {
-            Game(pb01);
-            CheckWinner();
-        }
-
-        private void pb02_Click(object sender, EventArgs e)
-        {
-            Game(pb02);
-            CheckWinner();
-        }
-
-        private void pb10_Click(object sender, EventArgs e)
-        {
-            Game(pb10);
-            CheckWinner();
-        }
-
-        private void pb11_Click(object sender, EventArgs e)
-        {
-            Game(pb11);
-            CheckWinner();
-        }
-
-        private void pb12_Click(object sender, EventArgs e)
-        {
-            Game(pb12);
-            CheckWinner();
-        }
-
-        private void pb20_Click(object sender, EventArgs e)
-        {
-            Game(pb20);
-            CheckWinner();
-        }
-
-        private void pb21_Click(object sender, EventArgs e)
-        {
-            Game(pb21);
-            CheckWinner();
-        }
-
-        private void pb22_Click(object sender, EventArgs e)
-        {
-            Game(pb22);
+            Game((PictureBox)sender);
             CheckWinner();
         }
 
         private void b_restart_Click(object sender, EventArgs e)
         {
-            ResetBouton();
+            ResetAllBoutons();
         }
 
 

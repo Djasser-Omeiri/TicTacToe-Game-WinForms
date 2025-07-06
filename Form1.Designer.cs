@@ -82,7 +82,7 @@
             this.pb22.TabIndex = 0;
             this.pb22.TabStop = false;
             this.pb22.Tag = "question";
-            this.pb22.Click += new System.EventHandler(this.pb22_Click);
+            this.pb22.Click += new System.EventHandler(this.pb_Click);
             // 
             // pb12
             // 
@@ -95,7 +95,7 @@
             this.pb12.TabIndex = 0;
             this.pb12.TabStop = false;
             this.pb12.Tag = "question";
-            this.pb12.Click += new System.EventHandler(this.pb12_Click);
+            this.pb12.Click += new System.EventHandler(this.pb_Click);
             // 
             // pb02
             // 
@@ -108,7 +108,7 @@
             this.pb02.TabIndex = 0;
             this.pb02.TabStop = false;
             this.pb02.Tag = "question";
-            this.pb02.Click += new System.EventHandler(this.pb02_Click);
+            this.pb02.Click += new System.EventHandler(this.pb_Click);
             // 
             // pb21
             // 
@@ -121,7 +121,7 @@
             this.pb21.TabIndex = 0;
             this.pb21.TabStop = false;
             this.pb21.Tag = "question";
-            this.pb21.Click += new System.EventHandler(this.pb21_Click);
+            this.pb21.Click += new System.EventHandler(this.pb_Click);
             // 
             // pb11
             // 
@@ -134,7 +134,7 @@
             this.pb11.TabIndex = 0;
             this.pb11.TabStop = false;
             this.pb11.Tag = "question";
-            this.pb11.Click += new System.EventHandler(this.pb11_Click);
+            this.pb11.Click += new System.EventHandler(this.pb_Click);
             // 
             // pb01
             // 
@@ -147,7 +147,7 @@
             this.pb01.TabIndex = 0;
             this.pb01.TabStop = false;
             this.pb01.Tag = "question";
-            this.pb01.Click += new System.EventHandler(this.pb01_Click);
+            this.pb01.Click += new System.EventHandler(this.pb_Click);
             // 
             // pb20
             // 
@@ -161,7 +161,7 @@
             this.pb20.TabIndex = 0;
             this.pb20.TabStop = false;
             this.pb20.Tag = "question";
-            this.pb20.Click += new System.EventHandler(this.pb20_Click);
+            this.pb20.Click += new System.EventHandler(this.pb_Click);
             // 
             // pb10
             // 
@@ -175,7 +175,7 @@
             this.pb10.TabIndex = 0;
             this.pb10.TabStop = false;
             this.pb10.Tag = "question";
-            this.pb10.Click += new System.EventHandler(this.pb10_Click);
+            this.pb10.Click += new System.EventHandler(this.pb_Click);
             // 
             // pb00
             // 
@@ -188,7 +188,7 @@
             this.pb00.TabIndex = 0;
             this.pb00.TabStop = false;
             this.pb00.Tag = "question";
-            this.pb00.Click += new System.EventHandler(this.pb00_Click);
+            this.pb00.Click += new System.EventHandler(this.pb_Click);
             // 
             // pbBIGPIC
             // 
