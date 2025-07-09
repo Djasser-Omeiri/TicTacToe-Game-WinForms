@@ -74,6 +74,18 @@ namespace TicTacToe
             }
             return false;
         }
+        void DisablePictureBoxes()
+        {
+            pb00.Enabled = false;
+            pb01.Enabled = false;
+            pb02.Enabled = false;
+            pb10.Enabled = false;
+            pb11.Enabled = false;
+            pb12.Enabled = false;
+            pb20.Enabled = false;
+            pb21.Enabled = false;
+            pb22.Enabled = false;
+        }
         void CheckWinner()
         {
 
@@ -81,41 +93,49 @@ namespace TicTacToe
             {
                 ChangeBackColor(pb00, pb01, pb02);
                 WinnerPlayer(pb00);
+                DisablePictureBoxes();
             }
             if (IsEqual(pb10, pb11, pb12))
             {
                 ChangeBackColor(pb10, pb11, pb12);
                 WinnerPlayer(pb10);
+                DisablePictureBoxes();
             }
             if (IsEqual(pb20, pb21, pb22))
             {
                 ChangeBackColor(pb20, pb21, pb22);
                 WinnerPlayer(pb20);
+                DisablePictureBoxes();
             }
             if (IsEqual(pb00, pb10, pb20))
             {
                 ChangeBackColor(pb00, pb10, pb20);
                 WinnerPlayer(pb00);
+                DisablePictureBoxes();
             }
             if (IsEqual(pb01, pb11, pb21))
             {
                 ChangeBackColor(pb01, pb11, pb21);
                 WinnerPlayer(pb01);
+                DisablePictureBoxes();
             }
             if (IsEqual(pb02, pb12, pb22))
             {
                 ChangeBackColor(pb02, pb12, pb22);
                 WinnerPlayer(pb02);
+                DisablePictureBoxes();
             }
             if (IsEqual(pb00, pb11, pb22))
             {
                 ChangeBackColor(pb00, pb11, pb22);
                 WinnerPlayer(pb00);
+                DisablePictureBoxes();
             }
             if (IsEqual(pb02, pb11, pb20))
             {
                 ChangeBackColor(pb02, pb11, pb20);
                 WinnerPlayer(pb02);
+                DisablePictureBoxes();
             }
 
 
